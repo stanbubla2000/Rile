@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    font-family: Arial;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* canvas NA DOLE */
+}
+
+/* UI */
+#menu, #settings, #gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10; /* menu NAD canvasem */
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
